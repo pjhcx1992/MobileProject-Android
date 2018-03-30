@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+     >
+
+    <!-- android:src="@drawable/test1"android:scaleType="centerCrop" -->
+
+
+    <!-- android:scaleType="fitXY" -->
+
+    <!--<TextView
+        android:id="@+id/tv_time"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="10dip"
+        android:background="#88252525"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:singleLine="true"
+        android:text="12:10"
+        android:textColor="#FFF"
+        android:textSize="10sp" />-->
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:paddingLeft="12dip"
+        android:paddingRight="5dip"
+        android:singleLine="true"
+        android:text="XXXXXXXXX"
+        android:textSize="18sp" />
+
+</RelativeLayout>

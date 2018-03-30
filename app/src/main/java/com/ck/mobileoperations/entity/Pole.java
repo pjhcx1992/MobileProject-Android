@@ -1,0 +1,136 @@
+package com.ck.mobileoperations.entity;
+
+import org.litepal.crud.DataSupport;
+
+/**
+ * Created by chenkai on 2018/1/4.
+ */
+
+public class Pole extends DataSupport {
+    private String longitude;//经度
+    private String latitude;//纬度
+    private String polename;
+    private String totheproject;//所属工程
+    private String poleheight;
+    private String fencha;
+    private int upNorth;
+    private int belowSouth;
+    private int leftWest;
+    private int rightEast;
+    private String addtime;
+    private String orgId;
+    private String projectId;
+    private String annotationId;
+
+    public String getAnnotationId() {
+        return annotationId;
+    }
+
+    public void setAnnotationId(String annotationId) {
+        this.annotationId = annotationId;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getPolename() {
+        return polename;
+    }
+
+    public void setPolename(String polename) {
+        this.polename = polename;
+    }
+
+    public String getTotheproject() {
+        return totheproject;
+    }
+
+    public void setTotheproject(String totheproject) {
+        this.totheproject = totheproject;
+    }
+
+    public String getPoleheight() {
+        return poleheight;
+    }
+
+    public void setPoleheight(String poleheight) {
+        this.poleheight = poleheight;
+    }
+
+    public String getFencha() {
+        return fencha;
+    }
+
+    public void setFencha(String fencha) {
+        this.fencha = fencha;
+    }
+
+    public int getUpNorth() {
+        return upNorth;
+    }
+
+    public void setUpNorth(int upNorth) {
+        this.upNorth = upNorth;
+    }
+
+    public int getBelowSouth() {
+        return belowSouth;
+    }
+
+    public void setBelowSouth(int belowSouth) {
+        this.belowSouth = belowSouth;
+    }
+
+    public int getLeftWest() {
+        return leftWest;
+    }
+
+    public void setLeftWest(int leftWest) {
+        this.leftWest = leftWest;
+    }
+
+    public int getRightEast() {
+        return rightEast;
+    }
+
+    public void setRightEast(int rightEast) {
+        this.rightEast = rightEast;
+    }
+
+    public String getAddtime() {
+        return addtime;
+    }
+
+    public void setAddtime(String addtime) {
+        this.addtime = addtime;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
+    }
+}

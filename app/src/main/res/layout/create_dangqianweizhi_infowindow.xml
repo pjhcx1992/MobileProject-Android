@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:minWidth="300dp"
+    android:background="@drawable/dialog_load_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="当前位置"
+        android:textSize="18sp" />
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/guang_jiao_xiang"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:text="区："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dqwz_qu_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/ren_shou_jing" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/guang_jiao_xiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="地址："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dqwz_dizhi_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/guang_jiao_xiang" />
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/jing_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="经度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dqwz_jingdu_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/wei_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="纬度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dqwz_weidu_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wei_du"
+            android:layout_alignBottom="@+id/wei_du"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

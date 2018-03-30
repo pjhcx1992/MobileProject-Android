@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:minWidth="310dp"
+    android:background="@drawable/dialog_load_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="人手井"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/guang_jiao_xiang"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:text="人手井名称："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/rsj_name_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/ren_shou_jing"
+            android:hint="区域+路名+#+编码"
+            android:singleLine="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/guang_jiao_xiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="人手井规格："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/rsj_size_window"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/guang_jiao_xiang"
+            android:entries="@array/spingarr"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/jing_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="经度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/jingdu_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/wei_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="纬度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/weidu_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wei_du"
+            android:layout_alignBottom="@+id/wei_du"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/add_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="上一节点:"
+            android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/rsj_node_name_list_window"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/add_node"
+            android:text="节点名" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="添加节点"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:id="@+id/add_node_rsj_window" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/add_nodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="光缆资源:"
+            android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/rsj_cable_name_list_window"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/add_nodes"
+            android:text="节点名" />
+        <!---->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="选择光缆"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:id="@+id/add_cable_rsj_window" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:id="@+id/cancel_node_window"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="取消"
+            />
+
+        <Button
+            android:id="@+id/send_node_window"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/cancel_node_window"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="确定" />
+
+    </RelativeLayout>
+</LinearLayout>

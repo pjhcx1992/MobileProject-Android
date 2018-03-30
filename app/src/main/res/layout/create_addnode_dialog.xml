@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:minWidth="300dp"
+    android:background="@drawable/dialog_load_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="上一节点与管道信息"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/add_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="附近节点："
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_toEndOf="@+id/add_node"
+            android:id="@+id/fujin_node_rsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button"
+            android:text="查看选择20米内的节点"
+            android:textColor="#FFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="上一节点："
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_toEndOf="@id/ren_shou_jing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linearlayout_corner_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:hint="输入节点名称或拼音首字母"
+                android:imeOptions="actionSearch"
+                android:maxLength="12"
+                android:dropDownHeight="200dp"
+                android:dropDownWidth="180dp"
+                android:singleLine="true"
+                android:textColor="#317F6D"
+                android:textColorHint="#317F6D"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/guang_jiao_xiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="管道类型："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/guandao_leixing"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/guang_jiao_xiang"
+            android:entries="@array/guandaoleixing"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/xin_jiu_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="管道规格："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/guandao_guige"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/xin_jiu_jing"
+            android:entries="@array/guandaoguige"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="管道孔数："
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/guandao_ks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:background="@drawable/editsharp"
+            android:hint="整数"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/jingsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="管道名称："
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/guandao_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/jingsss"
+            android:background="@drawable/editsharp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/jingsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="实测距离："
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/guandao_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/jingsss"
+            android:background="@drawable/editsharp"
+            android:singleLine="true"/>
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:id="@+id/cancel_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="取消添加节点"
+           />
+
+        <Button
+            android:id="@+id/send_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/cancel_node"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="确定添加节点" />
+
+    </RelativeLayout>
+</LinearLayout>

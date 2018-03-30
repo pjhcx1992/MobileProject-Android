@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/opticalcable_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="光缆1"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/optical_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/project" />
+    </RelativeLayout>
+
+</LinearLayout>

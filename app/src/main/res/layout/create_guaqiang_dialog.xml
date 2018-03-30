@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:minWidth="300dp"
+    android:background="@drawable/dialog_load_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="挂墙"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="挂墙点名称："
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/gq_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/ren_shou_jing"
+            android:background="@drawable/editsharp"
+            android:hint="区域+工程名+挂墙+编码"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ziyuan"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="资源状态："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ziyuan_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="维护方式："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/weihu_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/jing_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="经度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/gq_jingdu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/wei_du"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="纬度："
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/gq_weidu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wei_du"
+            android:layout_alignBottom="@+id/wei_du"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/add_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="上一节点:"
+            android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/guaqiang_node_name_list"
+            android:layout_width="210dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/add_node"
+            android:text="节点名" />
+        <!---->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="添加节点"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:id="@+id/add_node_guaqiang" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/add_nodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="光缆资源:"
+            android:textSize="16dp" />
+
+        <ListView
+            android:id="@+id/guaqiang_cable_name_list"
+            android:layout_width="210dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/add_nodes"
+            android:text="节点名" />
+        <!---->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="选择光缆"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:id="@+id/add_cable_guaqiang" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/gq_cancel_mark"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/shape_button"
+            android:text="取消"
+            android:textColor="#FFFF" />
+
+        <Button
+            android:id="@+id/gq_send_mark"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/gq_cancel_mark"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="确定" />
+
+    </RelativeLayout>
+</LinearLayout>

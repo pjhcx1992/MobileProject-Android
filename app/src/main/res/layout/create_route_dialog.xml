@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_load_bg">
+    <EditText
+        android:id="@+id/pro_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editsharp"
+        android:singleLine="true"
+        android:hint="请输入工程名"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cancel_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消创建"/>
+
+        <Button
+            android:id="@+id/queren_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="确认创建" />
+    </RelativeLayout>
+
+
+</LinearLayout>

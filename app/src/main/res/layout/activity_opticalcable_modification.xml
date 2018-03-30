@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="修改光缆信息"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/optical_cable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/opticalcable_name_activity"
+            android:layout_alignBottom="@+id/opticalcable_name_activity"
+            android:layout_alignParentStart="true"
+            android:text="光缆名称："
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/opticalcable_name_activity"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/optical_cable"
+            android:background="@drawable/editsharp"
+            android:hint="名称不能为空"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/optical_cable"
+            android:layout_marginTop="30dp"
+            android:text="光缆型号："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/optical_cable_size_activity"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/optical_cable_model_activity"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/guang_jiao_xiang"
+            android:entries="@array/optoicalcable" />
+
+        <EditText
+            android:id="@+id/optical_cable_model_activity"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ren_shou_jing"
+            android:layout_alignBottom="@+id/ren_shou_jing"
+            android:layout_toEndOf="@+id/ren_shou_jing"
+            android:background="@drawable/editsharp"
+            android:hint="厂家型号"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/guang_jiao_xiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/optical_cable_size_activity"
+            android:layout_alignParentStart="true"
+            android:text="光缆芯数："
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/cancel_optical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/send_optical"
+            android:layout_alignBottom="@+id/send_optical"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/send_optical"
+            android:text="返回"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/send_optical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/optical_cable_size_activity"
+            android:layout_below="@+id/optical_cable_size_activity"
+            android:layout_marginTop="34dp"
+            android:text="确定" />
+    </RelativeLayout>
+
+
+</LinearLayout>

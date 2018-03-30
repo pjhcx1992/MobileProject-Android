@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </com.amap.api.maps.MapView>
+
+        <TextView
+            android:id="@+id/project_name"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目名"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/cancel_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:text="返回"
+                android:textColor="#1d27af"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+           <!-- <TextView
+                android:id="@+id/save_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="完成"
+                android:textColor="#1d27af"
+                android:textStyle="bold"
+                android:visibility="visible" />-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/check_sava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape"
+                android:text="审核通过" />
+
+            <Button
+                android:id="@+id/check_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="59dp"
+                android:layout_toEndOf="@+id/check_sava"
+                android:background="@drawable/shape"
+                android:text="审核驳回" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

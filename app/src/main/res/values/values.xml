@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>人井</item>
+        <item>单页井</item>
+        <item>双页井</item>
+    </string-array>
+    <string-array name="dgheight">
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="fencha">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="fenqianjibie">
+        <item>一级</item>
+        <item>二级</item>
+        <item>末级</item>
+    </string-array>
+    <string-array name="gjjxleixing">
+        <item>单面</item>
+        <item>双面</item>
+        <item>288芯</item>
+        <item>576芯</item>
+    </string-array>
+    <string-array name="jietouhexinghao">
+        <item>暂定</item>
+        <item>暂定</item>
+        <item>暂定</item>
+        <item>暂定</item>
+    </string-array>
+    <string-array name="optoicalcable">
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>96</item>
+        <item>114</item>
+        <item>288</item>
+    </string-array>
+
+    <string-array name="xinjiujing">
+        <item>立新</item>
+        <item>立旧</item>
+    </string-array>
+    <string-array name="guandaoleixing">
+        <item>110PVC</item>
+        <item>160PVC</item>
+        <item>110PE</item>
+        <item>160PE</item>
+    </string-array>
+    <string-array name="guandaoguige">
+        <item>顶管</item>
+        <item>开挖</item>
+    </string-array>
+
+</resources>

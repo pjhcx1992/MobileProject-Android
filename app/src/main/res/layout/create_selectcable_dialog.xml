@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:minWidth="400dp"
+    android:background="@drawable/dialog_load_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:text="光缆段光缆选择"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/add_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="添加新光缆："
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/create_cable"
+            android:layout_toEndOf="@+id/add_node"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button"
+            android:text="添加新的光缆以供选择"
+            android:textColor="#FFFF" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/guang_jiao_xiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="光缆段起点："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/cable_origin"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/guang_jiao_xiang"
+            android:entries="@array/guandaoleixing"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/xin_jiu_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="管孔："
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/child_hole"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/xin_jiu_jing"
+            android:entries="@array/guandaoguige"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="子孔："
+            android:textSize="16sp" />
+
+        <Button
+            android:width="1dp"
+            android:id="@+id/childhole_one"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="1"
+            android:inputType="number"
+            android:maxLength="3"
+            android:background="#DC143C"
+            android:textColor="#fff"
+            android:singleLine="true" />
+
+        <Button
+            android:width="1dp"
+            android:id="@+id/childhole_two"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/childhole_one"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:background="#800080"
+            android:textColor="#fff"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/childhole_three"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/childhole_two"
+            android:width="1dp"
+            android:background="#0000FF"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:text="3"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="            "
+            android:textSize="16sp" />
+
+
+        <Button
+            android:width="1dp"
+            android:id="@+id/childhole_four"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView3"
+            android:inputType="number"
+            android:maxLength="3"
+            android:background="#da711c"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:text="4" />
+        <Button
+            android:width="1dp"
+            android:id="@+id/childhole_five"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/childhole_four"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:background="#FFFF00"
+            android:textColor="#fff"
+            android:text="5" />
+        <Button
+            android:width="1dp"
+            android:id="@+id/childhole_six"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/childhole_five"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:background="#87CEEB"
+            android:textColor="#fff"
+            android:text="6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/add_nodess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="全部光缆："
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/all_cable"
+            android:layout_toEndOf="@+id/add_nodess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button"
+            android:text="查看全部光缆并选择"
+            android:textColor="#FFFF" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ren_shou_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="光缆名称："
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_toEndOf="@id/ren_shou_jing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linearlayout_corner_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/cable_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:hint="输入光缆名称或拼音首字母"
+                android:imeOptions="actionSearch"
+                android:maxLength="12"
+                android:dropDownHeight="200dp"
+                android:dropDownWidth="180dp"
+                android:singleLine="true"
+                android:textColor="#317F6D"
+                android:textColorHint="#317F6D"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:id="@+id/cancel_cable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="取消添加光缆段"
+           />
+
+        <Button
+            android:id="@+id/send_cable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="41dp"
+            android:layout_toEndOf="@+id/cancel_cable"
+            android:background="@drawable/shape_button"
+            android:textColor="#FFFF"
+            android:text="确定添加光缆段" />
+
+    </RelativeLayout>
+</LinearLayout>

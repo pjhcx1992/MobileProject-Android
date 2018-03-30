@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="用户邀请 "
+        android:textColor="#FFC2F1E6"
+        android:textSize="30dp"
+        android:id="@+id/mp" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orgname"
+        android:layout_alignBottom="@+id/orgname"
+        android:layout_toStartOf="@+id/orgname"
+        android:text="公司:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+
+    <!--<Spinner
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/orgname"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mp"
+        android:entries="@array/guandaoguige"
+         />-->
+    <TextView
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/orgname"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mp"
+       />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_name"
+        android:layout_alignBottom="@+id/user_name"
+        android:layout_toStartOf="@+id/user_name"
+        android:text="姓名:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/editsharp"
+        android:layout_below="@+id/orgname"
+        android:hint="请输入姓名"
+        android:singleLine="true"
+        android:id="@+id/user_name" />
+
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone_number"
+        android:layout_alignBottom="@+id/phone_number"
+        android:layout_toStartOf="@+id/phone_number"
+        android:text="账号:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/editsharp"
+        android:layout_below="@+id/user_name"
+        android:hint="请输入账号"
+        android:singleLine="true"
+        android:id="@+id/phone_number" />
+
+
+    <TextView
+        android:id="@+id/depament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/department"
+        android:layout_alignBottom="@+id/department"
+        android:layout_toStartOf="@+id/department"
+        android:text="部门:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/department"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/phone_number"
+        android:entries="@array/guandaoguige"
+        />
+
+    <TextView
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/role"
+        android:layout_alignBottom="@+id/role"
+        android:layout_toStartOf="@+id/role"
+        android:text="角色:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/role"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/department"
+        android:entries="@array/guandaoguige"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UnknownId">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/shape"
+                android:text="取消" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

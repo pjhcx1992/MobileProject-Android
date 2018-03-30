@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/lanya"
+        android:layout_marginLeft="10dp"
+        android:text="蓝牙设备(点击连接)"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_marginTop="2dp"
+        android:text="正在搜索附近蓝牙设备，如果附近没有蓝牙设备列表为空(若果点击连接,并没有连接到设备,请重启应用,再次连接)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_service"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

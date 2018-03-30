@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:text="标识平台 "
+        android:textColor="#FFC2F1E6"
+        android:textSize="30dp"
+        android:id="@+id/mp" />
+
+    <TextView
+        android:id="@+id/account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mp"
+        android:layout_marginTop="28dp"
+        android:layout_toStartOf="@+id/user_number"
+        android:text="账号:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/user_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/account_number"
+        android:layout_alignBottom="@+id/account_number"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="66dp"
+        android:background="@drawable/editsharp"
+        android:singleLine="true"
+        android:hint="请输入手机号"
+         />
+
+    <TextView
+        android:id="@+id/psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/account_number"
+        android:layout_below="@+id/user_number"
+        android:layout_marginTop="20dp"
+        android:text="密码:"
+        android:textColor="#FFC2F1E6"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/psd"
+        android:layout_alignBottom="@+id/psd"
+        android:layout_toEndOf="@+id/psd"
+        android:background="@drawable/editsharp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/user_password"
+        android:layout_alignStart="@+id/psd"
+        android:layout_below="@+id/psd"
+        android:layout_marginTop="34dp"
+        android:text="登录"
+        android:textSize="18dp"
+        android:textColor="#fff"
+
+        android:background="@drawable/shape_button"/>
+
+    <TextView
+        android:id="@+id/cancel_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/login"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="10dp"
+        android:text="忘记密码?"
+        android:autoLink="all"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login"
+        android:layout_alignEnd="@id/login"
+        android:text="注册"
+        android:autoLink="all"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="MobileOperations" ></dbname>
+
+    <version value="2" ></version>
+
+    <list>
+        <mapping class="com.ck.mobileoperations.entity.User"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.PeopleWell"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.ProName"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.Pole"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.GJiaoX"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.YinShangDian"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.GuaQiang"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.JieTouHe"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.PointSet"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.OpticalCable"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.Pipeline"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.CableResource"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.OpticalFiberJumper"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.JumpOperation"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.Profile"></mapping>
+        <mapping class="com.ck.mobileoperations.entity.Organization"></mapping>
+
+
+    </list>
+</litepal>
